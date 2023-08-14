@@ -1,4 +1,4 @@
-import { Movies, MoviesResponse, SearchMovie } from '~/type/movie.ts'
+import { Movies, MoviesResponse, SearchMovie } from '../type/movie.ts'
 import { defineStore } from 'pinia'
 import axios, { AxiosResponse } from 'axios'
 

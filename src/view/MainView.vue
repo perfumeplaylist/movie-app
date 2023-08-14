@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useMovieStore } from '~/store/movieList'
-import MovieList from '~/components/MovieList.vue'
-import PageNavigation from '~/components/PageNavigation.vue'
+import MovieList from '../components/MovieList.vue'
+import PageNavigation from '../components/PageNavigation.vue'
+import { useMovieStore } from '../store/movieList.ts'
 
 const movieStore = useMovieStore()
 </script>

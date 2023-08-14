@@ -1,7 +1,6 @@
 <template>
   <div class="loading">
     <div class="container">
-      <!-- <div class="txt">Loading</div> -->
       <div class="dash uno"></div>
       <div class="dash dos"></div>
       <div class="dash tres"></div>

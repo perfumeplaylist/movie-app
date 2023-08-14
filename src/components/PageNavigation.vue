@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TheIcon from './TheIcon.vue'
-import { useMovieStore } from '~/store/movieList'
+import { useMovieStore } from '../store/movieList'
 
 const movieStore = useMovieStore()
 async function movePage($event: MouseEvent) {

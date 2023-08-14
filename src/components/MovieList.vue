@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { MovieProps } from '~/type/movie.ts'
+import { MovieProps } from '../type/movie.ts'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
+
+defineProps<{ movie: MovieProps }>()
 const router = useRouter()
 const list = ref(HTMLElement)
-defineProps<{ movie: MovieProps }>()
 
 function moveRouter() {
   if (list.value instanceof HTMLElement && list.value.tagName === 'LI') {

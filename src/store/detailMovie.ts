@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { MovieResponse } from '~/type/movie.ts'
+import { MovieResponse } from '../type/movie.ts'
 import axios, { AxiosResponse } from 'axios'
 
 export const useDetailMoive = defineStore('movie', {

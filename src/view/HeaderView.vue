@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SearchInput from '~/components/SearchInput.vue'
+import SearchInput from '../components/SearchInput.vue'
 </script>
 <template>
   <section class="common h-image">
@@ -9,7 +9,7 @@ import SearchInput from '~/components/SearchInput.vue'
 </template>
 <style scoped lang="scss">
 .h-image {
-  background: url('/public/headerImage.jpeg');
+  background: url('/headerImage.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

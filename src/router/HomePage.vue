@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useMovieStore } from '~/store/movieList'
-import HeaderView from '~/view/HeaderView.vue'
-import MainView from '~/view/MainView.vue'
-import TheLoading from '~/components/TheLoading.vue'
+import HeaderView from '../view/HeaderView.vue'
+import MainView from '../view/MainView.vue'
+import TheLoading from '../components/TheLoading.vue'
+import { useMovieStore } from '../store/movieList'
 
 const movieStore = useMovieStore()
 </script>

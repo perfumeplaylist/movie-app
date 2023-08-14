@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useMovieStore } from '~/store/movieList'
-import TheIcon from '~/components/TheIcon.vue'
+import { useMovieStore } from '../store/movieList'
+import TheIcon from '../components/TheIcon.vue'
 
 const title = ref('')
 const movieStore = useMovieStore()

@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import TheLoading from '../components/TheLoading.vue'
+import ModalView from '../router/ModalView.vue'
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useDetailMoive } from '~/store/detailMovie.ts'
-import TheLoading from '~/components/TheLoading.vue'
-import ModalView from '~/router/ModalView.vue'
+import { useDetailMoive } from '../store/detailMovie.ts'
+
 const route = useRoute()
 const router = useRouter()
 const detailMoive = useDetailMoive()
@@ -13,7 +14,7 @@ const currentId = computed(() => {
   return id
 })
 
-;(async () => await detailMoive.searchDetailMovie(currentId.value))()
+;(async () => await detailMoive.searchDetailMovie(currentId.value as string))()
 
 const changeRouter = () => {
   router.push('/')
@@ -34,8 +35,7 @@ const changeRouter = () => {
             ? '/no_image.jpeg'
             : detailMoive.movieInfo.Poster
         "
-        :alt="detailMoive.movieInfo.Title"
-        @click="removeModal" />
+        :alt="detailMoive.movieInfo.Title" />
       <div class="modal__content__txt">
         <h2 class="">제목: {{ detailMoive.movieInfo.Title }}</h2>
         <p>줄거리:{{ detailMoive.movieInfo.Plot }}</p>
