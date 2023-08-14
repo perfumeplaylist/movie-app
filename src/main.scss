@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-weight: 600;
+  font-size:20px;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.common{
+  text-align: center;
+  // padding:0 2rem;
+}
+
+.mx-center{
+  margin:auto;
+  max-width:1200px;
+}
+
+.title{
+  color:white;
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+.sub__title{
+  font-size:1rem;
+  margin:.8rem 0;
+}
